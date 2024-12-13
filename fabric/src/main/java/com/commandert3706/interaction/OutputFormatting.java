@@ -22,7 +22,7 @@ public class OutputFormatting {
     }
 
     public static String convertTimestampToHumanReadable(long timestamp) {
-        Instant instant = Instant.ofEpochMilli(timestamp); // Convert timestamp to Instant
+        Instant instant = Instant.ofEpochSecond(timestamp); // Convert timestamp to Instant
         DateTimeFormatter formatter = DateTimeFormatter
                 .ofPattern("yyyy-MM-dd HH:mm:ss") // Set your desired format
                 .withZone(ZoneId.systemDefault()); // Use system's default timezone
